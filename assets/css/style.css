@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+
+    --fundo_padrao: #263238;
+    --texto_padrao: #FFFFFF;
+    --operacoes_sucedidas: #43A047;
+    --operacoes_falhas: #E53935;
+    --venda_confirmada: #43A047;
+    --venda_cancelada: #E53935;
+    --venda_pendente: #FB8C00;
+}
