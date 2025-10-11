@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -15,4 +14,20 @@
     --venda_confirmada: #43A047;
     --venda_cancelada: #E53935;
     --venda_pendente: #FB8C00;
+    --botão_verde: #43A047;
+    --botão_azul: #1976D2;
+    --detalhes_azul: #1976D2;
+}
+
+body {
+    background-color: var(--fundo_padrao);
+    font-family: 'Poppins', sans-serif;
+}
+
+.comecar_agora {
+    background-color: var(--botão_verde);
+    color: var(--texto_padrao);
+    padding: 10px;
+    border-radius: 15px;
+    border-color: transparent;
 }
