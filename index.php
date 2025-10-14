@@ -6,29 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <header>
-
+    <nav class="navbar bg-light navbar-expand-sm">
+        <div class="container-fluid ms-3">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="" alt="Logo" width="30" height="24" class="bi-bootstrap-fill fs-1 me-2">
+                Bootstrap
+            </a>
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav">
+                    <a href="#" class="nav-link"> Entrar </a>
+                    <a href="#" class="nav-link"> Como Funciona </a>
+                    <a href="#" class="nav-link"> Recursos </a>
+                    <a href="#" class="nav-link"> Preços </a>
+                </div>
+            </div>
+        </div>
+    </nav>
 </header>
 
 <body>
 
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-sm-8">
-                <h2 style="text-align: left;">Da prateleira ao caixa,</h2>
-                <h2 style="text-align: left;">tudo em um só lugar!</h2>
-                <p style="text-align: left;">
+    <div class="container">
+        <img src="./assets/img/" alt="" class="float-end ms-3">
+
+        <div class="lead text-start">
+                <h2>Da prateleira ao caixa,</h2>
+                <h2>tudo em um só lugar!</h2>
+                <p>
                     Simplificando a gestão de produtos e finanças
                     para lojas.
                 </p>
                 <button class="comecar_agora">Começar agora</button>
-            </div>
-            <div class="col-sm-4">
-                <img src="./assets/img/retrato-de-um-homem-bonito-sorridente-em-oculos-Photoroom.png" alt="">
-            </div>
         </div>
     </div>
 

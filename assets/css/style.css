@@ -17,11 +17,23 @@
     --botão_verde: #43A047;
     --botão_azul: #1976D2;
     --detalhes_azul: #1976D2;
+
+    --fonte_principal: 'Poppins', sans-serif;
 }
 
 body {
     background-color: var(--fundo_padrao);
-    font-family: 'Poppins', sans-serif;
+    color: var(--texto_padrao);
+}
+
+h2 {
+    font-family: var(--fonte_principal);
+    font-weight: bold;
+}
+
+p {
+    font-family: var(--fonte_principal);
+    font-weight: 200;
 }
 
 .comecar_agora {
