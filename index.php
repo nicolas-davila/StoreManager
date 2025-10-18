@@ -11,7 +11,7 @@
 </head>
 
 <header>
-    <nav class="navbar bg-light navbar-expand-sm">
+    <nav class="navbar navbar-expand-sm" style="color: var(--texto_padrao); background-color: #5a6b7c">
         <div class="container-fluid ms-3">
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="" alt="Logo" width="30" height="24" class="bi-bootstrap-fill fs-1 me-2">
@@ -55,7 +55,7 @@
                 <button class="comecar_agora">Começar agora</button>
             </div>
 
-            <img src="./assets/img/Designer-Photoroom.png" alt="" style="height: 90px; width: auto;">
+            <img src="./assets/img/Designer-Photoroom.png" style="height: 100px; width: auto" alt="">
         </div>
     </div>
 

@@ -21,6 +21,12 @@
     --fonte_principal: 'Poppins', sans-serif;
 }
 
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+
 body {
     background-color: var(--fundo_padrao);
     color: var(--texto_padrao);
