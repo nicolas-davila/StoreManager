@@ -42,4 +42,12 @@ p {
     padding: 10px;
     border-radius: 15px;
     border-color: transparent;
+    transition: 0.3s ease-out;
+}
+
+.comecar_agora:hover {
+    background-color: var(--botão_azul);
+    padding: 12px;
+    transition: 0.3s ease-in;
+    font-size: 18px;
 }

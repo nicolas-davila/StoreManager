@@ -31,10 +31,21 @@
 
 <body>
 
-    <div class="container">
-        <img src="./assets/img/" alt="" class="float-end ms-3">
+<!--    <div class="align-middle row justify-content-center align-middle">-->
+<!--            <div class="col-4">-->
+<!--                <h2>Da prateleira ao caixa,</h2>-->
+<!--                <h2>tudo em um só lugar!</h2>-->
+<!--                <p>-->
+<!--                    Simplificando a gestão de produtos e finanças-->
+<!--                    para lojas.-->
+<!--                </p>-->
+<!--                <button class="comecar_agora">Começar agora</button>-->
+<!--            </div>-->
+<!--    </div>-->
 
-        <div class="lead text-start">
+    <div class="row justify-content-center align-items-center vh-100">
+        <div class="col-8 d-flex justify-content-between align-items-center">
+            <div class="text-start">
                 <h2>Da prateleira ao caixa,</h2>
                 <h2>tudo em um só lugar!</h2>
                 <p>
@@ -42,8 +53,27 @@
                     para lojas.
                 </p>
                 <button class="comecar_agora">Começar agora</button>
+            </div>
+
+            <img src="./assets/img/Designer-Photoroom.png" alt="" style="height: 90px; width: auto;">
         </div>
     </div>
+
+
+
+<!--        <div class="col-4 text-start">-->
+<!--            <img src="./assets/img/Designer-Photoroom.png" alt="" class="float-end ms-3" style="height: 90px; width: auto">-->
+<!--            <h2>Da prateleira ao caixa,</h2>-->
+<!--            <h2>tudo em um só lugar!</h2>-->
+<!--            <p>-->
+<!--                Simplificando a gestão de produtos e finanças-->
+<!--                para lojas.-->
+<!--            </p>-->
+<!--            <button class="comecar_agora">Começar agora</button>-->
+<!--        </div>-->
+
+
+
 
 </body>
 
