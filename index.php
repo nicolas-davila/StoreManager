@@ -11,22 +11,27 @@
 </head>
 
 <header>
-    <nav class="navbar navbar-expand-sm" style="color: var(--texto_padrao); background-color: #5a6b7c">
-        <div class="container-fluid ms-3">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="" alt="Logo" width="30" height="24" class="bi-bootstrap-fill fs-1 me-2">
-                Bootstrap
-            </a>
-            <div class="collapse navbar-collapse">
-                <div class="navbar-nav">
-                    <a href="#" class="nav-link"> Entrar </a>
-                    <a href="#" class="nav-link"> Como Funciona </a>
-                    <a href="#" class="nav-link"> Recursos </a>
-                    <a href="#" class="nav-link"> Preços </a>
-                </div>
-            </div>
+
+    <nav class="navbar" style="background-color: var(--fundo_padrao); box-shadow: 0 2px 2px -2px rgba(0,0,0,0.2);">
+        <div class="container-fluid" style="color: var(--texto_padrao);">
+            <a class="navbar-brand">Navbar</a>
+            <ul class="nav nav-underline">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
         </div>
     </nav>
+
 </header>
 
 <body>
