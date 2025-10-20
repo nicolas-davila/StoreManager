@@ -48,10 +48,10 @@
     transition: color 0.2s ease;
 }
 
-.nav-link:hover,
-.nav-link.active {
-    color: var(--texto_padrao);
+.nav-link:hover {
+    color: var(--botão_verde);
     text-decoration: underline;
+    transition: 0.3s ;
 }
 
 body {
@@ -85,13 +85,4 @@ p {
     padding: 12px;
     transition: 0.3s ease-in;
     font-size: 18px;
-}
-
-.png-landing {
-    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: 100% 100%;
-    mask-size: 100% 100%;
 }
