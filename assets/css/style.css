@@ -21,20 +21,6 @@
     --fonte_principal: 'Poppins', sans-serif;
 }
 
-:root {
-    --fundo_padrao: #263238;
-    --texto_titulo: #ffffff;
-    --texto_padrao: #cfd8dc;
-    --verde_btn: #2ecc71;
-    --verde_hover: #27ae60;
-}
-
-body {
-    background-color: var(--fundo_padrao);
-    color: var(--texto_titulo);
-    font-family: 'Poppins', sans-serif;
-}
-
 /* ===== Navbar ===== */
 .navbar {
     background-color: var(--fundo_padrao);
@@ -47,7 +33,7 @@ body {
     align-items: center;
     font-weight: 600;
     font-size: 1.25rem;
-    color: var(--texto_titulo);
+    color: var(--texto_padrao);
 }
 
 .navbar-brand img {
@@ -64,75 +50,9 @@ body {
 
 .nav-link:hover,
 .nav-link.active {
-    color: var(--texto_titulo);
+    color: var(--texto_padrao);
     text-decoration: underline;
 }
-
-/* ===== Hero Section ===== */
-.hero {
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-    background-color: var(--fundo_padrao);
-    padding: 4rem 0;
-}
-
-.hero h1 {
-    font-size: 2.8rem;
-    font-weight: 700;
-    line-height: 1.3;
-    color: var(--texto_titulo);
-}
-
-.hero p {
-    color: var(--texto_padrao);
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-}
-
-.hero .btn-success {
-    background-color: var(--verde_btn);
-    border: none;
-    border-radius: 50px;
-    padding: 0.8rem 2rem;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-}
-
-.hero .btn-success:hover {
-    background-color: var(--verde_hover);
-}
-
-.hero img {
-    max-width: 480px;
-    height: auto;
-}
-
-/* Espaçamento entre texto e imagem */
-.hero .row {
-    gap: 50px;
-}
-
-@media (max-width: 992px) {
-    .hero {
-        text-align: center;
-    }
-    .hero .text-start {
-        text-align: center !important;
-    }
-    .hero img {
-        max-width: 320px;
-        margin-top: 2rem;
-    }
-}
-
-
-.row {
-    margin: 0;
-    padding: 0;
-}
-
 
 body {
     background-color: var(--fundo_padrao);
@@ -142,11 +62,13 @@ body {
 h2 {
     font-family: var(--fonte_principal);
     font-weight: bold;
+    font-size: 4rem;
 }
 
 p {
     font-family: var(--fonte_principal);
     font-weight: 200;
+    font-size: 1.5rem;
 }
 
 .comecar_agora {

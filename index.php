@@ -10,49 +10,44 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<style>
-
-</style>
 </head>
 <body>
 
-<!-- ===== Navbar ===== -->
-<nav class="navbar navbar-expand-lg">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="./assets/img/logo.png" alt="Logo">
-            StoreManager
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link active" href="#">Entrar</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Como Funciona</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Recursos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Preços</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!-- ===== Hero Section ===== -->
-<section class="hero">
-    <div class="container">
-        <div class="row align-items-center justify-content-between">
-            <div class="col-lg-6 col-md-7 text-start">
-                <h1>Da prateleira ao caixa,<br>tudo em um só lugar!</h1>
-                <p>Simplificando a gestão de produtos e finanças para lojas.</p>
-                <button class="btn btn-success">Começar agora</button>
-            </div>
-            <div class="col-lg-5 col-md-5 text-center">
-                <img src="./assets/img/man.png" alt="Homem com notebook" class="img-fluid">
+    <!-- ===== Navbar ===== -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/logo.png" alt="Logo">
+                StoreManager
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Entrar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Como Funciona</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Recursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Preços</a></li>
+                </ul>
             </div>
         </div>
-    </div>
-</section>
+    </nav>
 
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="text-start">
+            <h2>Da prateleira ao caixa,</h2>
+            <h2>tudo em um só lugar!</h2>
+            <p>
+                Simplificando a gestão de produtos e finanças
+                para lojas.
+            </p>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary comecar_agora" type="button">Button</button>
+            </div>
+        </div>
+
+    </div>
 
 </body>
 
