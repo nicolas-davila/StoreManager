@@ -21,11 +21,50 @@
     --fonte_principal: 'Poppins', sans-serif;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: var(--fundo_padrao);
+    color: var(--texto_padrao);
+}
+
 /* ===== Navbar ===== */
 .navbar {
     background-color: var(--fundo_padrao);
     padding: 1rem 3rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+    animation: slideInFromLeft 0.8s ease-out forwards;
+    opacity: 0;
 }
 
 .navbar-brand {
@@ -54,11 +93,6 @@
     transition: 0.3s ;
 }
 
-body {
-    background-color: var(--fundo_padrao);
-    color: var(--texto_padrao);
-}
-
 h2 {
     font-family: var(--fonte_principal);
     font-weight: bold;
@@ -78,11 +112,19 @@ p {
     border-radius: 15px;
     border-color: transparent;
     transition: 0.3s ease-out;
+    font-size: 1.5rem;
 }
 
 .comecar_agora:hover {
     background-color: var(--botão_azul);
     padding: 12px;
     transition: 0.3s ease-in;
-    font-size: 18px;
+    font-size: 1.5rem;
+}
+
+.mais_conteudo {
+    padding-top: 8rem;
+
+    animation: fadeIn 0.8s ease-out 1.2s forwards;
+    opacity: 0;
 }
