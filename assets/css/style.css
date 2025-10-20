@@ -21,6 +21,113 @@
     --fonte_principal: 'Poppins', sans-serif;
 }
 
+:root {
+    --fundo_padrao: #263238;
+    --texto_titulo: #ffffff;
+    --texto_padrao: #cfd8dc;
+    --verde_btn: #2ecc71;
+    --verde_hover: #27ae60;
+}
+
+body {
+    background-color: var(--fundo_padrao);
+    color: var(--texto_titulo);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    background-color: var(--fundo_padrao);
+    padding: 1rem 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--texto_titulo);
+}
+
+.navbar-brand img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: var(--texto_padrao);
+    font-weight: 500;
+    margin-left: 1rem;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--texto_titulo);
+    text-decoration: underline;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--fundo_padrao);
+    padding: 4rem 0;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--texto_titulo);
+}
+
+.hero p {
+    color: var(--texto_padrao);
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn-success {
+    background-color: var(--verde_btn);
+    border: none;
+    border-radius: 50px;
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn-success:hover {
+    background-color: var(--verde_hover);
+}
+
+.hero img {
+    max-width: 480px;
+    height: auto;
+}
+
+/* Espaçamento entre texto e imagem */
+.hero .row {
+    gap: 50px;
+}
+
+@media (max-width: 992px) {
+    .hero {
+        text-align: center;
+    }
+    .hero .text-start {
+        text-align: center !important;
+    }
+    .hero img {
+        max-width: 320px;
+        margin-top: 2rem;
+    }
+}
+
+
 .row {
     margin: 0;
     padding: 0;
@@ -56,4 +163,13 @@ p {
     padding: 12px;
     transition: 0.3s ease-in;
     font-size: 18px;
+}
+
+.png-landing {
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
 }

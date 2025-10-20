@@ -10,74 +10,48 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<header>
+<style>
 
-    <nav class="navbar" style="background-color: var(--fundo_padrao); box-shadow: 0 2px 2px -2px rgba(0,0,0,0.2);">
-        <div class="container-fluid" style="color: var(--texto_padrao);">
-            <a class="navbar-brand">Navbar</a>
-            <ul class="nav nav-underline">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-</header>
-
+</style>
+</head>
 <body>
 
-<!--    <div class="align-middle row justify-content-center align-middle">-->
-<!--            <div class="col-4">-->
-<!--                <h2>Da prateleira ao caixa,</h2>-->
-<!--                <h2>tudo em um só lugar!</h2>-->
-<!--                <p>-->
-<!--                    Simplificando a gestão de produtos e finanças-->
-<!--                    para lojas.-->
-<!--                </p>-->
-<!--                <button class="comecar_agora">Começar agora</button>-->
-<!--            </div>-->
-<!--    </div>-->
-
-    <div class="row justify-content-center align-items-center vh-100">
-        <div class="col-8 d-flex justify-content-between align-items-center">
-            <div class="text-start">
-                <h2>Da prateleira ao caixa,</h2>
-                <h2>tudo em um só lugar!</h2>
-                <p>
-                    Simplificando a gestão de produtos e finanças
-                    para lojas.
-                </p>
-                <button class="comecar_agora">Começar agora</button>
-            </div>
-
-            <img src="./assets/img/Designer-Photoroom.png" style="height: 100px; width: auto" alt="">
+<!-- ===== Navbar ===== -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/img/logo.png" alt="Logo">
+            StoreManager
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="#">Entrar</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Como Funciona</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Recursos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Preços</a></li>
+            </ul>
         </div>
     </div>
+</nav>
 
-
-
-<!--        <div class="col-4 text-start">-->
-<!--            <img src="./assets/img/Designer-Photoroom.png" alt="" class="float-end ms-3" style="height: 90px; width: auto">-->
-<!--            <h2>Da prateleira ao caixa,</h2>-->
-<!--            <h2>tudo em um só lugar!</h2>-->
-<!--            <p>-->
-<!--                Simplificando a gestão de produtos e finanças-->
-<!--                para lojas.-->
-<!--            </p>-->
-<!--            <button class="comecar_agora">Começar agora</button>-->
-<!--        </div>-->
-
-
+<!-- ===== Hero Section ===== -->
+<section class="hero">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-lg-6 col-md-7 text-start">
+                <h1>Da prateleira ao caixa,<br>tudo em um só lugar!</h1>
+                <p>Simplificando a gestão de produtos e finanças para lojas.</p>
+                <button class="btn btn-success">Começar agora</button>
+            </div>
+            <div class="col-lg-5 col-md-5 text-center">
+                <img src="./assets/img/man.png" alt="Homem com notebook" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
 
 
 </body>
