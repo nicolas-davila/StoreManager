@@ -64,6 +64,43 @@
         <i class="bi bi-arrow-down" style="font-size: 2rem; color: #fff;"></i>
     </div>
 
+    <section class="recursos">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col">
+                    <div class="card mx-auto">
+                        <img src="./assets/img/gestao4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Organize seus produtros de forma eficiente e controle o estoque.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mx-auto">
+                        <img src="./assets/img/financas.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Gerencie suas finanças com relatórios e gráficos detalhados
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mx-auto"">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Acompanhe suas vendas e faturamento em tempo real
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
