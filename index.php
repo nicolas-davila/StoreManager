@@ -27,7 +27,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="nav nav-pills nav-fill">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Entrar</a>
+                        <a class="nav-link active" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Como Funciona</a>
@@ -69,28 +69,28 @@
             <div class="row align-items-center">
                 <div class="col">
                     <div class="card mx-auto">
-                        <img src="./assets/img/gestao4.png" class="card-img-top" alt="...">
+                        <img src="./assets/img/gestao.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <p class="card-text">
+                            <p class="card-text" style="font-size: 1.8rem">
                                 Organize seus produtros de forma eficiente e controle o estoque.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col ms-5">
                     <div class="card mx-auto">
                         <img src="./assets/img/financas.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <p class="card-text">
+                            <p class="card-text" style="font-size: 1.8rem">
                                 Gerencie suas finanças com relatórios e gráficos detalhados
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col ms-5">
                     <div class="card mx-auto"">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="./assets/img/vendas.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <p class="card-text">
+                            <p class="card-text" style="font-size: 1.8rem">
                                 Acompanhe suas vendas e faturamento em tempo real
                             </p>
                         </div>
