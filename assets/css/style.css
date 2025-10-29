@@ -123,6 +123,12 @@ h2 {
     font-size: 4rem;
 }
 
+h3 {
+    font-family: var(--fonte_principal);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
 p {
     font-family: var(--fonte_principal);
     font-weight: 200;
@@ -161,7 +167,7 @@ p {
 }
 
 .rodape {
-    padding-top: 40rem;
+    padding-top: 25rem;
 }
 
 .rodape-conteudo {

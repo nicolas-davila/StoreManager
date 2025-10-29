@@ -100,6 +100,89 @@
         </div>
     </section>
 
+
+    <section class="depoimentos" id="depoimentos" style="padding-top: 18rem">
+        <div class="container">
+            <h3 class="text-center mb-5 fw-bold">O que nossos clientes dizem</h3>
+
+            <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="p-3 p-md-5 text-center">
+                                    <div class="card-body">
+                                        <img src="URL_DA_IMAGEM_CLIENTE_1" class="rounded-circle mb-3" alt="Foto do Cliente 1"
+                                             style="width: 80px; height: 80px; object-fit: cover;">
+                                        <p class="lead fst-italic">
+                                            "O StoreManager transformou a gestão do meu estoque.
+                                            É incrivelmente fácil de usar e muito eficiente. Recomendo a todos!"
+                                        </p>
+                                        <h5 class="fw-bold mt-4 mb-0">- Ana Silva</h5>
+                                        <p class="fw-bold pt-3">Proprietária da "Doces da Ana"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="p-3 p-md-5 text-center">
+                                    <div class="card-body">
+                                        <img src="URL_DA_IMAGEM_CLIENTE_2" class="rounded-circle mb-3" alt="Foto do Cliente 2"
+                                             style="width: 80px; height: 80px; object-fit: cover;">
+                                        <p class="lead fst-italic">
+                                            "Sempre tive problemas com a organização, mas com o StoreManager,
+                                            tudo ficou mais claro e meus processos otimizados. Equipe de suporte excelente!"
+                                        </p>
+                                        <h5 class="fw-bold mt-4 mb-0">- João Oliveira</h5>
+                                        <p class="fw-bold pt-3">Gerente da "Tech Eletrônicos"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="p-3 p-md-5 text-center">
+                                    <div class="card-body">
+                                        <img src="URL_DA_IMAGEM_CLIENTE_3" class="rounded-circle mb-3" alt="Foto do Cliente 3"
+                                             style="width: 80px; height: 80px; object-fit: cover;">
+                                        <p class="lead fst-italic">
+                                            "Um sistema robusto e confiável. Ganhei tempo e reduzi erros significativamente.
+                                            Essencial para qualquer negócio que preza pela eficiência."
+                                        </p>
+                                        <h5 class="fw-bold mt-4 mb-0">- Mariana Costa</h5>
+                                        <p class="fw-bold pt-3">CEO da "Moda & Estilo"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
     <div class="rodape" style="height: 10px; background-color: transparent"></div>
 
     <footer class="bg-white rodape-conteudo">
