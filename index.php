@@ -64,7 +64,7 @@
         <i class="bi bi-arrow-down" style="font-size: 2rem; color: #fff;"></i>
     </div>
 
-    <section class="recursos">
+    <section class="recursos" id="recursos">
         <div class="container text-center">
             <div class="row align-items-center">
                 <div class="col">
@@ -99,6 +99,50 @@
             </div>
         </div>
     </section>
+
+    <div class="rodape" style="height: 10px; background-color: transparent"></div>
+
+    <footer class="bg-white rodape-conteudo">
+        <div class="container-fluid" style="padding-top: 2rem">
+
+            <div class="row pb-2 text-start">
+
+                <div class="col-2 ps-5">
+                    <h6 class="fw-bold mb-3"">Links rápidos</h6>
+                    <ul class="list-unstyled" >
+                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none botao_link">Início</a></li>
+                        <li class="mb-2"><a href="#recursos" class="text-secondary text-decoration-none botao_link">Recursos</a></li>
+                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none botao_link">Preços</a></li>
+                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none botao_link">Suporte</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-3">
+                    <h6 class="fw-bold mb-3">Informações de contato</h6>
+                    <p class="text-secondary mb-1">
+                        <i class="bi bi-envelope me-2"></i> suporte@daviladev.com
+                    </p>
+                    <p class="text-secondary mb-1">
+                        <i class="bi bi-telephone me-2"></i> (35) 9 8426-3591
+                    </p>
+                </div>
+
+                <div class="col-3">
+                    <h6 class="fw-bold mb-3">Redes sociais</h6>
+                    <div class="d-flex fs-4">
+                        <a href="#" class="text-dark me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-dark me-3"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-dark"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="py-3 text-center">
+                <p class="text-muted small mb-0">© 2025 StoreManager. Desenvolvido por Nicolas Dávila.</p>
+            </div>
+
+        </div>
+    </footer>
 
 
 </body>

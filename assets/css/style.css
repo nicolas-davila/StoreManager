@@ -8,7 +8,8 @@
 :root {
 
     --fundo_padrao: #263238;
-    --texto_padrao: #FFFFFF;
+    --texto_padrao_branco: #FFFFFF;
+    --texto_padrao_preto: #000000;
     --operacoes_sucedidas: #43A047;
     --operacoes_falhas: #E53935;
     --venda_confirmada: #43A047;
@@ -65,7 +66,19 @@
 
 body {
     background-color: var(--fundo_padrao);
-    color: var(--texto_padrao);
+    color: var(--texto_padrao_branco);
+}
+
+/* ===== Estilizações padrão para links ===== */
+.botao_link {
+    transition: 0.2s;
+}
+
+.botao_link:hover {
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    transition: 0.2s;
 }
 
 /* ===== Navbar ===== */
@@ -83,7 +96,7 @@ body {
     align-items: center;
     font-weight: 600;
     font-size: 1.25rem;
-    color: var(--texto_padrao);
+    color: var(--texto_padrao_branco);
 }
 
 .navbar-brand img {
@@ -92,7 +105,7 @@ body {
 }
 
 .nav-link {
-    color: var(--texto_padrao);
+    color: var(--texto_padrao_branco);
     font-weight: 500;
     margin-left: 1rem;
     transition: color 0.2s ease;
@@ -118,7 +131,7 @@ p {
 
 .comecar_agora {
     background-color: var(--botão_verde);
-    color: var(--texto_padrao);
+    color: var(--texto_padrao_branco);
     padding: 10px;
     border-radius: 15px;
     border-color: transparent;
@@ -145,4 +158,12 @@ p {
 
     animation: slideInFromLeft 0.8s ease-out 1.2s forwards;
     opacity: 0;
+}
+
+.rodape {
+    padding-top: 40rem;
+}
+
+.rodape-conteudo {
+    color: var(--texto_padrao_preto);
 }
