@@ -173,3 +173,16 @@ p {
 .rodape-conteudo {
     color: var(--texto_padrao_preto);
 }
+
+
+
+
+/* ===== Tela de cadastro ===== */
+.form_cadastro {
+    color: var(--texto_padrao_branco);
+}
+
+.form_cadastro::placeholder {
+    color: #FFFFFF !important;
+    opacity: 1 !important;
+}
