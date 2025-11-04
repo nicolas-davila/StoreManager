@@ -5,6 +5,20 @@
     scroll-behavior: smooth;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    /* Define a cor do TEXTO do autofill */
+    -webkit-text-fill-color: #FFFFFF !important;
+
+    /* "Pinta" o fundo com a sua cor.
+      (Usamos box-shadow pois 'background-color' é ignorado)
+    */
+    box-shadow: 0 0 0 30px #24282d inset !important;
+    -webkit-box-shadow: 0 0 0 30px #24282d inset !important;
+}
+
 :root {
 
     --fundo_padrao: #263238;
@@ -81,6 +95,10 @@ body {
     transition: 0.2s;
 }
 
+.linkPadrao:hover {
+
+}
+
 /* ===== Navbar ===== */
 .navbar {
     background-color: var(--fundo_padrao);
@@ -112,7 +130,7 @@ body {
 }
 
 .nav-link:hover {
-    color: var(--botão_verde);
+    color: var(--botão_azul);
     text-decoration: underline;
     transition: 0.3s ;
 }
@@ -178,11 +196,56 @@ p {
 
 
 /* ===== Tela de cadastro ===== */
+
+.cadastroBody {
+    background-image: url('../img/bgCadastro.png');
+
+    /* 2. Faz a imagem cobrir toda a área */
+    background-size: cover;
+
+    /* 3. Centraliza a imagem na tela */
+    background-position: center center;
+
+    /* 4. Impede que a imagem se repita */
+    background-repeat: no-repeat;
+
+    /* 5. (Opcional) Deixa o fundo fixo ao rolar a página */
+    background-attachment: fixed;
+
+    /* ----- Suas cores ----- */
+    /* Cor de fundo caso a imagem falhe (você já tinha) */
+    background-color: var(--fundo_padrao);
+    color: var(--texto_padrao_branco);
+}
+
 .form_cadastro {
     color: var(--texto_padrao_branco);
 }
 
-.form_cadastro::placeholder {
-    color: #FFFFFF !important;
-    opacity: 1 !important;
+.form_cadastro .form-control {
+    background-color: #24282d;
+    color: #FFFFFF; /* Define a cor do texto digitado */
+    border-color: #444; /* Melhora a cor da borda */
+}
+
+.form_cadastro .form-control::placeholder {
+    color: #999;
+    opacity: 1; /* Garante que fique visível */
+}
+
+.form_cadastro .form-control:focus {
+    background-color: #24282d;
+    color: #FFFFFF;
+    border-color: var(--detalhes_azul);
+    box-shadow: 0 0 0 0.25rem rgba(25, 118, 210, 0.25); /* Usa seu azul como cor de foco */
+}
+
+.botao_cadastro {
+    transition: 0.2s ease-out;
+}
+
+.botao_cadastro:hover {
+    background-color: var(--botão_verde);
+    font-weight: bold;
+    transition: 0.2s ease-in;
 }

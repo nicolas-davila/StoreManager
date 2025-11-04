@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -10,25 +10,83 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <div class="d-flex justify-content-center align-items-center vh-100">
+<body class="cadastroBody">
+
+    <nav class="navbar navbar-expand-lg mt-4" style="border-bottom: none; box-shadow: none;">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./assets/img/logo.png" alt="Logo" style="height:40px; margin-right:10px;">
+                StoreManager
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Como Funciona</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Preços</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex justify-content-center" style="margin-top: 7rem ">
         <div class="container-fluid" style="max-width: 800px;">
-            <form class="p-4 shadow-sm form_cadastro">
+            <form class="p-4 form_cadastro align-items-center">
                 <h4 class="text-center mb-4">Vamos criar sua conta!</h4>
                 <div class="mb-3">
-                    <label for="nome" class="form-label">Nome</label>
-                    <input type="text" class="form-control" style="background-color: #24282d;" id="nome" placeholder="Nome Completo">
+                    <label for="nome" class="form-label">Seu Nome</label>
+                    <input type="text" class="form-control" style="background-color: #24282d;" id="nome" placeholder="Nome Completo" required>
                 </div>
+
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" style="background-color: #24282d">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" style="background-color: #24282d;" id="nome" placeholder="seuEmail@exemplo.com" required>
                 </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+
+                <div class="mb-3">
+                    <label for="nomeEmpresa" class="form-label">Nome da Empresa/Comércio</label>
+                    <input type="text" class="form-control" style="background-color: #24282d;" id="nome" placeholder="Ex: Moda & Estilo" required>
                 </div>
-                <button type="submit" class="btn btn-primary w-100">Submit</button>
+
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Logotipo da Empresa/Comércio</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" style="background-color: #24282d" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Confirme a Senha</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" style="background-color: #24282d" required>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary w-50 botao_cadastro">Cadastrar</button>
+                </div>
             </form>
+
+            <div class="text-center">
+                <p>
+                    Já tem uma conta? <a style="font-weight: bold" class="link-light link-offset-3-hover link-underline
+                                        link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Entrar
+                    </a>
+                </p>
+            </div>
+
         </div>
     </div>
 </body>
