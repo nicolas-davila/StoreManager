@@ -95,9 +95,6 @@ body {
     transition: 0.2s;
 }
 
-.linkPadrao:hover {
-
-}
 
 /* ===== Navbar ===== */
 .navbar {
@@ -241,11 +238,11 @@ p {
 }
 
 .botao_cadastro {
+    font-weight: bold;
     transition: 0.2s ease-out;
 }
 
 .botao_cadastro:hover {
-    background-color: var(--botão_verde);
-    font-weight: bold;
+    background-color: var(--botão_verde);;
     transition: 0.2s ease-in;
 }
