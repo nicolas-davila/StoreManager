@@ -42,7 +42,7 @@
 
     <div class="d-flex justify-content-center" style="margin-top: 7rem ">
         <div class="container-fluid" style="max-width: 800px;">
-            <form class="p-4 form_cadastro align-items-center">
+            <form class="p-4 formCadastroAcesso align-items-center">
                 <h4 class="text-center mb-4">Vamos criar sua conta?</h4>
                 <div class="mb-3">
                     <label for="nome" class="form-label">Seu Nome</label>
@@ -75,11 +75,11 @@
                 </div>
 
                 <div class="text-center">
-                    <button type="submit" class="btn btn-primary w-50 botao_cadastro">Cadastrar</button>
+                    <button type="submit" class="btn btn-primary w-50 botaoCadastroAcesso">Cadastrar</button>
                 </div>
             </form>
 
-            <div class="text-center">
+            <div class="text-center animacaoPadrao">
                 <p>
                     Já tem uma conta? <a style="font-weight: bold" class="link-light link-offset-3-hover link-underline
                                         link-underline-opacity-0 link-underline-opacity-75-hover" href="/acesso">Entrar

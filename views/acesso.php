@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="cadastroBody">
+<body class="acessoBody">
 
 <nav class="navbar navbar-expand-lg mt-4" style="border-bottom: none; box-shadow: none;">
     <div class="container">
@@ -42,7 +42,7 @@
 
 <div class="d-flex justify-content-center" style="margin-top: 7rem ">
     <div class="container-fluid" style="max-width: 800px;">
-        <form class="p-4 form_cadastro align-items-center">
+        <form class="p-4 formCadastroAcesso align-items-center">
             <h4 class="text-center mb-4">StoreManager</h4>
 
             <div class="mb-3">
@@ -56,11 +56,11 @@
             </div>
 
             <div class="text-center">
-                <button type="submit" class="btn btn-primary w-50 botao_cadastro">Entrar</button>
+                <button type="submit" class="btn btn-primary w-50 botaoCadastroAcesso">Entrar</button>
             </div>
         </form>
 
-        <div class="text-center">
+        <div class="text-center animacaoPadrao">
             <p>
                 Ainda não tem uma conta? <a style="font-weight: bold" class="link-light link-offset-3-hover link-underline
                                         link-underline-opacity-0 link-underline-opacity-75-hover" href="/cadastro">Cadastre-se!

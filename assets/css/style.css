@@ -83,6 +83,12 @@ body {
     color: var(--texto_padrao_branco);
 }
 
+
+/* ===== Animações Pdrão ===== */
+.animacaoPadrao {
+    animation: fadeInSlideUp 0.8s ease-out;
+}
+
 /* ===== Estilizações padrão para links ===== */
 .botao_link {
     transition: 0.2s;
@@ -215,17 +221,18 @@ p {
     color: var(--texto_padrao_branco);
 }
 
-.form_cadastro {
+.formCadastroAcesso {
     color: var(--texto_padrao_branco);
+    animation: fadeInSlideUp 0.8s ease-out;
 }
 
-.form_cadastro .form-control {
+.formCadastroAcesso .form-control {
     background-color: #24282d;
     color: #FFFFFF; /* Define a cor do texto digitado */
     border-color: #444; /* Melhora a cor da borda */
 }
 
-.form_cadastro .form-control::placeholder {
+.formCadastroAcesso .form-control::placeholder {
     color: #999;
     opacity: 1; /* Garante que fique visível */
 }
@@ -237,12 +244,26 @@ p {
     box-shadow: 0 0 0 0.25rem rgba(25, 118, 210, 0.25); /* Usa seu azul como cor de foco */
 }
 
-.botao_cadastro {
+.botaoCadastroAcesso {
     font-weight: bold;
     transition: 0.2s ease-out;
 }
 
-.botao_cadastro:hover {
+.botaoCadastroAcesso:hover {
     background-color: var(--botão_verde);;
     transition: 0.2s ease-in;
+}
+
+/* ===== Tela de acesso ===== */
+
+.acessoBody {
+    background-image: url('../img/fundoAcesso.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    /* 5. (Opcional) Deixa o fundo fixo ao rolar a página */
+    background-attachment: fixed;
+    background-color: var(--fundo_padrao);
+    color: var(--texto_padrao_branco);
 }
