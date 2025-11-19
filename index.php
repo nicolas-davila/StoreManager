@@ -1,5 +1,6 @@
 <?php
 
+    session_start();
     // 1. Obter a URL requisitada
     // Remove a parte do diretório do projeto para isolar apenas a rota.
     // ATENÇÃO: Você pode precisar ajustar a parte de 'trim' dependendo de como o WAMP/servidor está configurado.
