@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Entrar - StoreManager</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 <body class="acessoBody">
 
@@ -42,17 +44,17 @@
 
 <div class="d-flex justify-content-center" style="margin-top: 7rem ">
     <div class="container-fluid" style="max-width: 800px;">
-        <form class="p-4 formCadastroAcesso align-items-center">
+        <form class="p-4 formCadastroAcesso align-items-center" onsubmit="fazer_login(event)">
             <h4 class="text-center mb-4">StoreManager</h4>
 
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" style="background-color: #24282d;" id="nome" placeholder="Digite seu email" required>
+                <input type="email" class="form-control" style="background-color: #24282d;" name="email" placeholder="Digite seu email" required>
             </div>
 
             <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Senha</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" style="background-color: #24282d" placeholder="Digite sua senha" required>
+                <label for="senha" class="form-label">Senha</label>
+                <input type="password" class="form-control" name="senha" style="background-color: #24282d" placeholder="Digite sua senha" required>
             </div>
 
             <div class="text-center">
@@ -63,12 +65,45 @@
         <div class="text-center animacaoPadrao">
             <p>
                 Ainda não tem uma conta? <a style="font-weight: bold" class="link-light link-offset-3-hover link-underline
-                                        link-underline-opacity-0 link-underline-opacity-75-hover" href="index.php">Cadastre-se!
+                                        link-underline-opacity-0 link-underline-opacity-75-hover" href="cadastro.php.php">Cadastre-se!
                 </a>
             </p>
         </div>
 
     </div>
 </div>
+
+    <script>
+        function fazer_login(e) {
+            e.preventDefault();
+
+            var dados = new FormData(e.target);
+
+            Swal.fire({
+                title: 'Entrando...',
+                didOpen: () => { Swal.showLoading() }
+            });
+
+            fetch('ajax/login.php', {
+                method: 'POST',
+                body: dados
+            })
+                .then(response => response.json())
+                .then(data => {
+                    Swal.close();
+                    if (data.status == 'sucesso') {
+                        window.location.href = 'painel/index.php';
+                    } else {
+                        Swal.fire('Erro', data.msg, 'error');
+                    }
+                })
+                .catch(error => {
+                    Swal.close();
+                    console.log(error);
+                    Swal.fire('Erro', 'Falha na conexão!', 'error');
+                });
+        }
+    </script>
+
 </body>
 </html>
