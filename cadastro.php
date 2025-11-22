@@ -1,3 +1,9 @@
+<?php
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -9,13 +15,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body class="cadastroBody">
 
     <nav class="navbar navbar-expand-lg mt-4" style="border-bottom: none; box-shadow: none;">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="./assets/img/logo.png" alt="Logo" style="height:40px; margin-right:10px;">
+                <img src="assets/img/logo.png" alt="Logo" style="height:40px; margin-right:10px;">
                 StoreManager
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -24,10 +31,10 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="nav nav-pills nav-fill">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Como Funciona</a>
+                        <a class="nav-link" href="acesso.php">Entrar</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Recursos</a>
@@ -51,43 +58,94 @@
 
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" style="background-color: #24282d;" id="nome" placeholder="seuEmail@exemplo.com" required>
+                    <input type="email" class="form-control" style="background-color: #24282d;" name="nome" placeholder="seuEmail@exemplo.com" required>
                 </div>
 
                 <div class="mb-3">
                     <label for="nomeEmpresa" class="form-label">Nome da Empresa/Comércio</label>
-                    <input type="text" class="form-control" style="background-color: #24282d;" id="nome" placeholder="Ex: Moda & Estilo" required>
+                    <input type="text" class="form-control" style="background-color: #24282d;"name="nome_empresa" placeholder="Ex: Moda & Estilo" required>
                 </div>
 
                 <div class="mb-3">
-                    <label for="formFile" class="form-label">Logotipo da Empresa/Comércio</label>
-                    <input class="form-control" type="file" id="formFile">
+                    <label for="logotipo" class="form-label">Logotipo da Empresa/Comércio</label>
+                    <input class="form-control" type="file" id="formFile" name="logotipo">
                 </div>
 
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" style="background-color: #24282d" required>
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="password" class="form-control" name="senha" style="background-color: #24282d" required>
                 </div>
 
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Confirme a Senha</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" style="background-color: #24282d" required>
+                    <label for="confirmar_senha" class="form-label">Confirme a Senha</label>
+                    <input type="password" class="form-control" name="confirma_senha" style="background-color: #24282d" required>
                 </div>
 
                 <div class="text-center">
-                    <button type="submit" class="btn btn-primary w-50 botaoCadastroAcesso">Cadastrar</button>
+                    <button type="submit" class="btn btn-primary w-50 botaoCadastroAcesso" onclick="cadastrar_lojista()">Cadastrar</button>
                 </div>
             </form>
 
             <div class="text-center animacaoPadrao">
                 <p>
                     Já tem uma conta? <a style="font-weight: bold" class="link-light link-offset-3-hover link-underline
-                                        link-underline-opacity-0 link-underline-opacity-75-hover" href="/acesso">Entrar
+                                        link-underline-opacity-0 link-underline-opacity-75-hover" href="acesso.php">Entrar
                     </a>
                 </p>
             </div>
 
         </div>
     </div>
+
+    <script>
+        function cadastrar_lojista(e) {
+            e.preventDefault();
+
+            var dados = new FormData(e.target);
+
+            Swal.fire({
+                title: 'Processando...',
+                text: 'Aguarde um momento.',
+                allowOutsideClick: false,
+                didOpen: () => {
+                    Swal.showLoading();
+                }
+            });
+
+            fetch('ajax/cadastrar_lojista.php', {
+                method: 'POST',
+                body: dados
+            })
+                .then(response => response.json())
+                .then(data => {
+                    Swal.close();
+
+                    if (data.status == 'sucesso') {
+                        Swal.fire({
+                            title: 'Sucesso!',
+                            text: data.msg,
+                            icon: 'success',
+                            confirmButtonText: 'Ir para Acesso'
+                        }).then((result) => {
+                            if (result.isConfirmed || result.isDismissed) {
+                                window.location.href = 'acesso.php';
+                            }
+                        });
+                    } else {
+                        Swal.fire({
+                            title: 'Ops!',
+                            text: data.msg,
+                            icon: 'error',
+                            confirmButtonText: 'Ok'
+                        });
+                    }
+                })
+                .catch(error => {
+                    Swal.fire('Erro!', 'Houve uma falha na comunicação com o servidor.', 'error');
+                    console.log(error);
+                });
+        }
+    </script>
+
 </body>
 </html>

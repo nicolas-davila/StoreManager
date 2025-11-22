@@ -15,7 +15,7 @@
 <nav class="navbar navbar-expand-lg mt-4" style="border-bottom: none; box-shadow: none;">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="./assets/img/logo.png" alt="Logo" style="height:40px; margin-right:10px;">
+            <img src="assets/img/logo.png" alt="Logo" style="height:40px; margin-right:10px;">
             StoreManager
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -24,10 +24,10 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="nav nav-pills nav-fill">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Como Funciona</a>
+                    <a class="nav-link active" href="acesso.php">Entrar</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Recursos</a>
@@ -63,7 +63,7 @@
         <div class="text-center animacaoPadrao">
             <p>
                 Ainda não tem uma conta? <a style="font-weight: bold" class="link-light link-offset-3-hover link-underline
-                                        link-underline-opacity-0 link-underline-opacity-75-hover" href="/cadastro">Cadastre-se!
+                                        link-underline-opacity-0 link-underline-opacity-75-hover" href="index.php">Cadastre-se!
                 </a>
             </p>
         </div>
