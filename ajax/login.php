@@ -25,7 +25,17 @@
             $_SESSION['logo'] = $row['logo'];
             $_SESSION['nivel'] = $row['nivel_acesso'];
 
-            echo json_encode(['status' => 'sucesso', 'msg' => 'Bem vindo de volta!']);
+            if ($row['nivel_acesso'] == 'admin') {
+                $destino = 'admin/index.php';
+            } else {
+                $destino = 'painel/index.php';
+            }
+
+            echo json_encode([
+                'status' => 'sucesso',
+                'msg' => 'Entrando...',
+                'destino' => $destino
+            ]);
         } else {
             echo json_encode(['status' => 'erro', 'msg' => 'Email ou senha incorretos.']);
         }

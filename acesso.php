@@ -91,8 +91,11 @@
                 .then(response => response.json())
                 .then(data => {
                     Swal.close();
+
+                    console.log(data);
+
                     if (data.status == 'sucesso') {
-                        window.location.href = 'painel/index.php';
+                        window.location.href = data.destino;
                     } else {
                         Swal.fire('Erro', data.msg, 'error');
                     }
