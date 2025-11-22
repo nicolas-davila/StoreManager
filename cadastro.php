@@ -49,16 +49,16 @@
 
     <div class="d-flex justify-content-center" style="margin-top: 7rem ">
         <div class="container-fluid" style="max-width: 800px;">
-            <form class="p-4 formCadastroAcesso align-items-center">
+            <form class="p-4 formCadastroAcesso align-items-center" onsubmit="cadastrar_lojista(event)">
                 <h4 class="text-center mb-4">Vamos criar sua conta?</h4>
                 <div class="mb-3">
                     <label for="nome" class="form-label">Seu Nome</label>
-                    <input type="text" class="form-control" style="background-color: #24282d;" id="nome" placeholder="Nome Completo" required>
+                    <input type="text" class="form-control" style="background-color: #24282d;" name="nome" placeholder="Nome Completo" required>
                 </div>
 
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" style="background-color: #24282d;" name="nome" placeholder="seuEmail@exemplo.com" required>
+                    <input type="email" class="form-control" style="background-color: #24282d;" name="email" placeholder="seuEmail@exemplo.com" required>
                 </div>
 
                 <div class="mb-3">
@@ -82,7 +82,7 @@
                 </div>
 
                 <div class="text-center">
-                    <button type="submit" class="btn btn-primary w-50 botaoCadastroAcesso" onclick="cadastrar_lojista()">Cadastrar</button>
+                    <button type="submit" class="btn btn-primary w-50 botaoCadastroAcesso">Cadastrar</button>
                 </div>
             </form>
 
