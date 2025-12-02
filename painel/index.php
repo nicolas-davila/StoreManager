@@ -78,16 +78,85 @@
 </nav>
 
 <div class="container-fluid">
-    <h1>Bem-vindo(a) ao painel geral!</h1>
-    <div class="container mt-5">
-        <div class="card text-center mb-3" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h1 style="padding-left: 50px; padding-top: 50px">Bem-vindo(a) ao painel geral!</h1>
+
+    <div class="row g-3 mb-4 mt-4" style="padding-left: 50px; padding-right: 50px;">
+        <!-- Card 1: Produtos -->
+        <div class="col-12 col-md-6 col-xl-3">
+            <div class="card-dashboard flex-column align-items-center p-3 gap-2">
+                <div class="icon-box text-primary">
+                    <i class="bi bi-box-seam"></i>
+                </div>
+                <div>
+                    <h5 class="mb-1">Produtos em Estoque</h5>
+                    <div class="valor">120 UND</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2: Média de Vendas -->
+        <div class="col-12 col-md-6 col-xl-3">
+            <div class="card-dashboard flex-column align-items-center p-3 gap-2">
+                <div class="icon-box text-success">
+                    <i class="bi bi-currency-dollar"></i>
+                </div>
+                <div>
+                    <h5 class="mb-1">Média de Vendas p/dia</h5>
+                    <div class="valor">R$ 2.568,37</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3: Novos Clientes -->
+        <div class="col-12 col-md-6 col-xl-3">
+            <div class="card-dashboard flex-column align-items-center p-3 gap-2">
+                <div class="icon-box text-info">
+                    <i class="bi bi-person"></i>
+                </div>
+                <div>
+                    <h5 class="mb-1">Novos Clientes</h5>
+                    <div class="valor">
+                        <span class="text-white-50 fs-6 me-1">Em teste</span> 32
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4: Faturamento -->
+        <div class="col-12 col-md-6 col-xl-3">
+            <div class="card-dashboard flex-column align-items-center p-3 gap-2">
+                <div class="icon-box text-warning">
+                    <i class="bi bi-graph-up-arrow"></i>
+                </div>
+                <div>
+                    <h5 class="mb-1">Faturamento Mensal</h5>
+                    <div class="valor">R$ 21.297,43</div>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- 3. Área do Gráfico (Simulação visual) -->
+    <div class="row" style="padding-left: 50px; padding-right: 50px;">
+        <div class="col-12">
+            <div class="card-dashboard-grafico p-3" style="min-height: 350px; justify-content: flex-start;">
+                <h5 class="mb-4">Desempenho de Vendas</h5>
+
+                <div class="d-flex align-items-end justify-content-around h-100 pb-3 ps-2 pe-2 gap-2">
+                    <div style="width: 100%; height: 40%; background: #0d6efd; border-radius: 4px 4px 0 0; opacity: 0.7;"></div>
+                    <div style="width: 100%; height: 60%; background: #0d6efd; border-radius: 4px 4px 0 0; opacity: 0.7;"></div>
+                    <div style="width: 100%; height: 35%; background: #0d6efd; border-radius: 4px 4px 0 0; opacity: 0.7;"></div>
+                    <div style="width: 100%; height: 80%; background: #0d6efd; border-radius: 4px 4px 0 0; opacity: 0.7;"></div>
+                    <div style="width: 100%; height: 55%; background: #0d6efd; border-radius: 4px 4px 0 0; opacity: 0.7;"></div>
+                    <div style="width: 100%; height: 90%; background: #dc3545; border-radius: 4px 4px 0 0; opacity: 0.8;"></div> <!-- Vermelho no final -->
+                </div>
+                <small class="text-center text-white-50 mt-2">Tela Inicial (Mais adequado)</small>
+            </div>
+        </div>
+    </div>
+
+</div>
+
 </div>
 </body>
 </html>

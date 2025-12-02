@@ -254,8 +254,68 @@ p {
     background-position: center center;
     background-repeat: no-repeat;
 
-    /* 5. (Opcional) Deixa o fundo fixo ao rolar a página */
     background-attachment: fixed;
     background-color: var(--fundo_mais_escuro);
     color: var(--texto_padrao_branco);
 }
+
+
+/* Tela inicial cliente */
+.card-dashboard {
+    background-color: var(--fundo_padrao);
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #2f343a;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+    transition: ease-out 0.2s;
+}
+
+.card-dashboard:hover {
+    background-color: var(--fundo_mais_escuro);
+    transition: ease-in 0.2s;
+}
+
+.card-dashboard-grafico {
+    background-color: var(--fundo_padrao);
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #2f343a;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+    transition: ease-out 0.2s;
+}
+
+.card-dashboard-grafico:hover {
+    background-color: var(--fundo_mais_escuro);
+    transition: ease-in 0.2s;
+}
+
+.card-dashboard h5 {
+    font-size: 0.9rem;
+    color: #aeb0b4;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.card-dashboard .valor {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.icon-box {
+    font-size: 2rem;
+    color: #fff;
+}
+
