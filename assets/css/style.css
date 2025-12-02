@@ -105,7 +105,6 @@ body {
     transition: 0.2s;
 }
 
-
 /* ===== Navbar ===== */
 .navbar {
     background-color: var(--fundo_padrao);
@@ -206,22 +205,11 @@ p {
 
 .cadastroBody {
     background-image: url('../img/bgCadastro.png');
-
-    /* 2. Faz a imagem cobrir toda a área */
     background-size: cover;
-
-    /* 3. Centraliza a imagem na tela */
     background-position: center center;
-
-    /* 4. Impede que a imagem se repita */
     background-repeat: no-repeat;
-
-    /* 5. (Opcional) Deixa o fundo fixo ao rolar a página */
     background-attachment: fixed;
-
-    /* ----- Suas cores ----- */
-    /* Cor de fundo caso a imagem falhe (você já tinha) */
-    background-color: var(--fundo_padrao);
+    background-color: var(--fundo_mais_escuro);
     color: var(--texto_padrao_branco);
 }
 

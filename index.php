@@ -15,7 +15,7 @@
 <body>
 
 <!-- ===== Navbar ===== -->
-<nav class="navbar navbar-expand-lg mt-4" style="border-bottom: none; box-shadow: none;">
+<nav class="navbar navbar-expand-lg" style="border-bottom: none; box-shadow: none;">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#">
             <img src="./assets/img/logo.png" alt="Logo" style="height:40px; margin-right:10px;">
