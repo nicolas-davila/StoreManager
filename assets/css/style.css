@@ -136,8 +136,8 @@ body {
 }
 
 .nav-link:hover {
-    color: var(--botão_azul);
-    text-decoration: underline;
+    color: white !important;
+    opacity: 40%;
     transition: 0.3s ;
 }
 

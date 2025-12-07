@@ -77,7 +77,7 @@
     </div>
 </nav>
 
-<div class="container-fluid">
+<div class="container-fluid text-center">
     <h1 style="padding-left: 50px; padding-top: 50px">Bem-vindo(a) ao painel geral!</h1>
 
     <div class="row g-3 mb-4 mt-4" style="padding-left: 50px; padding-right: 50px;">
@@ -137,7 +137,7 @@
     </div>
 
     <!-- 3. Área do Gráfico (Simulação visual) -->
-    <div class="row" style="padding-left: 50px; padding-right: 50px;">
+    <div class="row" style="padding-left: 50px; padding-right: 50px; margin-bottom: 80px;">
         <div class="col-12">
             <div class="card-dashboard-grafico p-3" style="min-height: 350px; justify-content: flex-start;">
                 <h5 class="mb-4">Desempenho de Vendas</h5>
@@ -150,8 +150,15 @@
                     <div style="width: 100%; height: 55%; background: #0d6efd; border-radius: 4px 4px 0 0; opacity: 0.7;"></div>
                     <div style="width: 100%; height: 90%; background: #dc3545; border-radius: 4px 4px 0 0; opacity: 0.8;"></div> <!-- Vermelho no final -->
                 </div>
-                <small class="text-center text-white-50 mt-2">Tela Inicial (Mais adequado)</small>
             </div>
+        </div>
+    </div>
+
+    <i class="bi bi-arrow-down-circle-fill text-primary" style="font-size: 2rem;"></i>
+
+    <div class="container mt-5">
+        <div style="background-color: var(--fundo_padrao); padding: 20px; border-radius: 15px">
+            <h4>Últimas Vendas</h4>
         </div>
     </div>
 
