@@ -160,10 +160,35 @@
         <div style="background-color: var(--fundo_padrao); padding: 20px; border-radius: 15px">
             <h4>Últimas Vendas</h4>
         </div>
+
+        <div id="ultimas_vendas">
+            <p class="text-muted" style="color: var(--texto_padrao_branco) !important;" id="carregando_vendas">Carregando...</p>
+        </div>
     </div>
 
 </div>
 
 </div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    function carregarVendas() {
+        $.ajax({
+            url: 'listar_ultimas_vendas.php',
+            type: 'GET',
+            success: function (dados) {
+                $('#ultimas_vendas').html(dados);
+            },
+            error: function () {
+                $('#ultimas_vendas').html('<p class="text-danger">Erro ao carregar vendas.</p>');
+            }
+        })
+    }
+
+    $(document).ready(function () {
+        carregarVendas();
+    })
+</script>
+
 </body>
 </html>
